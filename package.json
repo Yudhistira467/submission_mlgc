@@ -1,0 +1,26 @@
+{
+    "name": "api-cancer-prediction",
+    "version": "1.0.0",
+    "description": "Submison MLGC",
+    "type": "module",
+    "main": " src/server/server.js",
+    "scripts": {
+    "start": "node src/server/server.js",
+    "dev": "nodemon src/server/server.js",
+    "lint": "eslint ."
+    },
+    "author": "Yunas Wildan Yudhistira",
+    "dependencies": {
+    "@google-cloud/firestore": "^6.6.0",
+    "@hapi/hapi": "^21.3.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "joi": "^17.13.3",
+    "@tensorflow/tfjs": "^4.22.0",
+    "@tensorflow/tfjs-node": "^4.14.0"
+    },
+    "devDependencies": {
+    "nodemon": "^3.0.1",
+    "eslint": "^7.32.0"
+    }
+}
