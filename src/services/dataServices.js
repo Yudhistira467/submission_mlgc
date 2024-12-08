@@ -19,19 +19,4 @@ async function savePrediction(id, data) {
   }
 }
 
-// Fungsi untuk mengambil riwayat prediksi
-async function getPredictionHistory() {
-  try {
-    const predictionsCollection = db.collection('predictions');
-    const snapshot = await predictionsCollection.get();
-    return snapshot.docs.map((doc) => ({
-      id: doc.id,
-      history: doc.data(),
-    }));
-  } catch (error) {
-    console.error('Error fetching data:', error.message);
-    return [];
-  }
-}
-
-export { savePrediction, getPredictionHistory };
+/
