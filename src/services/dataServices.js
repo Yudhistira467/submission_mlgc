@@ -7,11 +7,6 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const pathKey = path.resolve(__dirname, '../keys/firestore-keys.json');
 
-const db = new Firestore({
-  projectId: 'submissionmlgc-yunasswildan',
-  keyFilename: pathKey,
-});
-
 // Fungsi untuk menyimpan prediksi ke dalam Firestore
 async function savePrediction(id, data) {
   try {
